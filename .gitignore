@@ -1,0 +1,7 @@
+﻿# не обрабатывать Python compiled files
+*.pyc
+# временные файлы
+*.*~
+*.out*
+
+py_matlab_matrix_divide/build/

@@ -1,7 +1,7 @@
 // TestMatlabMLDivide.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+//#include "stdafx.h"
 
 #include <iostream>
 using namespace std;
@@ -15,7 +15,7 @@ using namespace std;
 
 extern "C"
 {
-	__declspec(dllexport) int test(double* test_complex_array)
+	int test(double* test_complex_array)
 	{
 		cout << test_complex_array[0] << endl;
 		cout << test_complex_array[1] << endl;
@@ -25,7 +25,7 @@ extern "C"
 
 extern "C"
 {
-	__declspec(dllexport) int mldivide(double* a_data, int a_rows, int a_cols,
+	int mldivide(double* a_data, int a_rows, int a_cols,
 		double* b_data, int b_rows, int b_cols, double* c_data, int c_rows, int c_cols)
 	{
 
